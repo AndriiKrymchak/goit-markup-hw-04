@@ -184,6 +184,11 @@ img {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobackground.jpg);
 }
 
 .hero-title {
