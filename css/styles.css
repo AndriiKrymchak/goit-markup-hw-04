@@ -242,6 +242,28 @@ img {
   gap: var(--item-set-gap);
 }
 
+.advantages-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: var(--filter-bg);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
 .advantages-item {
   width: 270px;
   text-align: left;
