@@ -61,6 +61,14 @@ img {
   padding: 0;
 } */
 
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
 /* Логотип верхній */
 
 .header-logo {
@@ -299,23 +307,10 @@ img {
   padding-top: 0px;
 }
 
-.projects-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
 .projects-list {
   display: flex;
   gap: var(--item-set-gap);
 }
-/* .projects-item:not(:first-child) {
-  margin-left: 30px;
-} */
 
 /* Наша команда */
 
@@ -328,15 +323,6 @@ img {
 .profile-background {
   background-color: var(--primary-white-color);
   padding: 30px;
-}
-
-.profile-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .profile-list {
@@ -363,6 +349,47 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.network-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-item {
+}
+
+.network-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  justify-content: center;
+  align-items: center;
+}
+/* Наші клієнти */
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /* Портфоліо */
