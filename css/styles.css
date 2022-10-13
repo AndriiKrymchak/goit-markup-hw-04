@@ -512,9 +512,7 @@ img {
   /* background-color: salmon; */
   /* outline: 1px solid red; */
   margin: 0 auto;
-
   display: flex;
-  flex-direction: column;
 }
 /* Логотип нижній */
 
@@ -552,6 +550,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+.contacts-block {
+  margin-right: 70px;
+}
 
 .contacts-bottom {
   color: var(--primary-text-footer);
@@ -565,4 +566,34 @@ img {
 .contacts-bottom:focus {
   color: var(--accent-color);
   text-decoration-line: none;
+}
+
+.footer-social {
+}
+.footer-subtitle {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.network-list {
+}
+.footer-item {
+}
+.footer-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link:hover {
+  background-color: var(--accent-color);
 }
