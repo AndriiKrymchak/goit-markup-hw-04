@@ -16,6 +16,7 @@
   --filter-background: #f5f4fa;
   --primary-icon-color: #afb1b8;
   --item-set-gap: 30px;
+  --icon-set-gap: 10px;
 }
 
 body {
@@ -161,7 +162,13 @@ img {
 .cont-item {
   display: flex;
   align-content: center;
+  justify-content: center;
 }
+
+.icon-contacts {
+  margin-right: 10px;
+}
+
 .cont-item.contacts:not(:last-child) {
   margin-right: 50px;
 }
@@ -178,11 +185,16 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-top:hover,
 .contacts-top:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Герой */
@@ -356,7 +368,7 @@ img {
 
 .network-list {
   display: flex;
-  gap: 10px;
+  gap: var(--icon-set-gap);
   align-items: center;
   justify-content: center;
 }
@@ -372,7 +384,8 @@ img {
   align-items: center;
 }
 
-.network-link:hover {
+.network-link:hover,
+.network-link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -381,7 +394,7 @@ img {
 
 .clients-list {
   display: flex;
-  gap: 30px;
+  gap: var(--item-set-gap);
   justify-content: center;
 }
 .clients-item {
@@ -400,12 +413,16 @@ img {
   display: flex;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-link:hover .icon-clients {
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
   fill: var(--accent-color);
 }
 
@@ -464,7 +481,10 @@ img {
   flex-wrap: wrap;
   gap: var(--item-set-gap);
 }
-.gallery-box {
+.gallery-box:hover,
+.gallery-box:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-link {
@@ -594,6 +614,7 @@ img {
   align-items: center;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--accent-color);
 }
