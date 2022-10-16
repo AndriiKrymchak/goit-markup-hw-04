@@ -200,7 +200,7 @@ img {
 /* Герой */
 
 .hero {
-  background-color: var(--primary-bg-footer);
+  background-color: var(--primary-background-footer);
   display: flex;
   flex-direction: column;
   align-items: center;
