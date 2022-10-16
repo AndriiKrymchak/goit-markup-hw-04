@@ -481,14 +481,18 @@ img {
   flex-wrap: wrap;
   gap: var(--item-set-gap);
 }
-.gallery-box:hover,
-.gallery-box:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .gallery-link {
   text-decoration-line: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .gallery-item {
@@ -533,6 +537,7 @@ img {
   /* outline: 1px solid red; */
   margin: 0 auto;
   display: flex;
+  align-items: baseline;
 }
 /* Логотип нижній */
 
